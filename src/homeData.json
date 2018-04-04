@@ -1,0 +1,22 @@
+{
+  "headings": [
+    {"field": "_id", "label": "#"},
+    {"field": "address", "label": "Address"},
+    {"field": "city", "label": "City"},
+    {"field": "homeType", "label": "Type"},
+    {"field": "bedrooms", "label": "Bedrooms"},
+    {"field": "bathrooms", "label": "Bathrooms"},
+    {"field": "floorType", "label": "Floors"},
+    {"field": "rent", "label": "Rent"}
+  ],
+  "listings": [
+    { "_id": 123, "address": "3324 Bundy Blvd. #2", "city": "Santa Monica", "homeType": "Apartment", "bedrooms": 3, "bathrooms": 2, "floorType": "Hardwood", "rent": 3250},
+    { "_id": 456, "address": "9263 Jefferson Blvd.", "city": "Culver City", "homeType": "Condo", "bedrooms": 2, "bathrooms": 2, "floorType": "Carpet", "rent": 2840},
+    { "_id": 789, "address": "82545 Grand View Ave.", "city": "Los Angeles", "homeType": "House", "bedrooms": 2, "bathrooms": 1, "floorType": "Hardwood", "rent": 2700},
+    { "_id": 234, "address": "1520 2nd Street", "city": "Santa Monica", "homeType": "House", "bedrooms": 5, "bathrooms": 3, "floorType": "Concrete", "rent": 11140},
+    { "_id": 567, "address": "912 Manchester Blvd. #6", "city": "Westchester", "homeType": "Condo", "bedrooms": 2, "bathrooms": 2.5, "floorType": "Hardwood", "rent": 2925},
+    { "_id": 891, "address": "630 South Sherbourne Ave. #1", "city": "Los Angeles", "homeType": "Apartment", "bedrooms": 1, "bathrooms": 1, "floorType": "Carpet", "rent": 1650},
+    { "_id": 345, "address": "1114 Barrington Blvd.", "city": "Los Angeles", "homeType": "House", "bedrooms": 3, "bathrooms": 2.5, "floorType": "Hardwood", "rent": 3600},
+    { "_id": 678, "address": "61643 Sunset Blvd.", "city": "Los Angeles", "homeType": "Studio", "bedrooms": 0, "bathrooms": 0.5, "floorType": "Carpet", "rent": 2250}
+  ]
+}
