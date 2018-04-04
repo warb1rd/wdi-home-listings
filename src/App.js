@@ -19,7 +19,7 @@ class App extends Component {
     return (
       <div className="App">
         <Container>
-          <h1>Home Listing</h1>
+          <h1>Home Listings</h1>
           <Table striped bordered>
             {/* table headers */}
             <thead>
