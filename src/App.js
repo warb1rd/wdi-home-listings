@@ -2,7 +2,19 @@ import React, { Component } from 'react';
 import { Container, Table } from 'reactstrap'
 import './App.css';
 
+// look at homeData.json to see how the data is structured
+import homeData from './homeData.json'
+console.log(homeData)
+
 class App extends Component {
+
+  state = {
+    headings: homeData.headings,
+    listings: homeData.listings,
+    sortBy: null,
+    sortAscending: true
+  }
+
   render() {
     return (
       <div className="App">

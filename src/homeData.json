@@ -17,6 +17,8 @@
     { "_id": 567, "address": "912 Manchester Blvd. #6", "city": "Westchester", "homeType": "Condo", "bedrooms": 2, "bathrooms": 2.5, "floorType": "Hardwood", "rent": 2925},
     { "_id": 891, "address": "630 South Sherbourne Ave. #1", "city": "Los Angeles", "homeType": "Apartment", "bedrooms": 1, "bathrooms": 1, "floorType": "Carpet", "rent": 1650},
     { "_id": 345, "address": "1114 Barrington Blvd.", "city": "Los Angeles", "homeType": "House", "bedrooms": 3, "bathrooms": 2.5, "floorType": "Hardwood", "rent": 3600},
-    { "_id": 678, "address": "61643 Sunset Blvd.", "city": "Los Angeles", "homeType": "Studio", "bedrooms": 0, "bathrooms": 0.5, "floorType": "Carpet", "rent": 2250}
+    { "_id": 678, "address": "61643 Sunset Blvd.", "city": "Los Angeles", "homeType": "Studio", "bedrooms": 0, "bathrooms": 0.5, "floorType": "Carpet", "rent": 2250},
+    { "_id": 912, "address": "8893 Ventura Blvd.", "city": "Sherman Oaks", "homeType": "Apartment", "bedrooms": 1, "bathrooms": 1, "floorType": "Hardwood", "rent": 1820},
+    { "_id": 219, "address": "4444 Colorado Ave. #5", "city": "Santa Monica", "homeType": "Townhome", "bedrooms": 2, "bathrooms": 2.5, "floorType": "Hardwood", "rent": 3500}
   ]
 }
