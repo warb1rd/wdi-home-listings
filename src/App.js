@@ -11,53 +11,68 @@ class App extends Component {
   state = {
     headings: homeData.headings,
     listings: homeData.listings,
-    sortBy: null,
+    sortBy: null,                                             
     sortAscending: true
   }
 
+  compare(key) {
+    return function (a, b) {
+      if (a[key] < b[key]){ 
+        return -1                               
+      }
+      if (a[key] > b[key]){
+        return 1                                
+      }
+      return 0
+    }
+  }
+
+  handleClick(key) {
+    let arrayCopy = [...this.state.listings]
+    arrayCopy.sort(this.compare(key))
+    // console.log(arrayCopy.sort())
+    this.setState({
+      listings: arrayCopy,
+      sortBy: this.state.listings.key,
+      sortAscending: !this.state.sortAscending
+    })
+  }
+
   render() {
+    const { headings, listings } = this.state
+    
     return (
       <div className="App">
         <Container>
           <h1>Home Listings</h1>
           <Table striped bordered>
-            {/* table headers */}
             <thead>
-              <tr>
-                <th>Heading 1 <span>&darr;</span></th>
-                <th>Heading 2 <span>&uarr;</span></th>
-                <th>Heading 3</th>
-                <th>Heading 4</th>
-                <th>Heading 5</th>
-              </tr>
+            <tr>
+            {headings.map((h, i) => {
+                return(
+                  <th onClick={()=>this.handleClick(h.field)}key={i}>{h.field}<span>&darr;</span></th>
+                )
+            })}
+            </tr>
             </thead>
 
-            {/* table rows */}
-            <tbody>
-              <tr>
-                <td>Lorem ipsum</td>
-                <td>2</td>
-                <td>Dolor sit amet</td>
-                <td>21</td>
-                <td>342</td>
-              </tr>
-
-              <tr>
-                <td>Lorem ipsum</td>
-                <td>2</td>
-                <td>Dolor sit amet</td>
-                <td>21</td>
-                <td>342</td>
-              </tr>
-
-              <tr>
-                <td>Lorem ipsum</td>
-                <td>2</td>
-                <td>Dolor sit amet</td>
-                <td>21</td>
-                <td>342</td>
-              </tr>
-            </tbody>
+            {listings.map((l) => {
+              return (
+                <tbody key={l._id}>
+                <tr>
+                  <td>{l._id}</td>
+                  <td>{l.address}</td>
+                  <td>{l.city}</td>
+                  <td>{l.homeType}</td>
+                  <td>{l.bedrooms}</td>
+                  <td>{l.bathrooms}</td>
+                  <td>{l.floorType}</td>
+                  <td>{l.rent}</td>
+                </tr>
+              </tbody>
+              )
+            })}
+           
           </Table>
         </Container>
       </div>
